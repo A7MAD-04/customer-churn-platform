@@ -1,9 +1,9 @@
 # Python
 __pycache__/
 *.py[cod]
-.env
 venv/
 .venv/
+.*venv
 
 # Data (too large for GitHub)
 data/
@@ -11,11 +11,34 @@ data/
 # Node / React
 node_modules/
 dist/
+dist-ssr/
 build/
+*.local
+
+# Environment variables
+.env
 .env.local
 
 # VS Code
-.vscode/
+.vscode/*
+!.vscode/extensions.json
+
+# Editor files
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # OS
 .DS_Store
