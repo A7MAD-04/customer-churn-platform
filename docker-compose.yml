@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  notebook:
+    image: jupyter/scipy-notebook:latest
+    ports:
+      - "8888:8888"
+    volumes:
+      - ./notebook:/home/jovyan/work
+      - ./data:/home/jovyan/data
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
