@@ -4,14 +4,9 @@ __pycache__/
 .env
 venv/
 .venv/
-*.pkl
-*.joblib
 
 # Data (too large for GitHub)
 data/
-
-# Model artifacts
-model/artifacts/
 
 # Node / React
 node_modules/
